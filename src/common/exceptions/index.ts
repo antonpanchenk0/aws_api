@@ -13,3 +13,9 @@ export class BadRequest extends BaseHttpError {
     super(400, message);
   }
 }
+
+export class InternalError extends BaseHttpError {
+  constructor (message: string) {
+    super(500, message);
+  }
+}
